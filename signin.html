@@ -96,10 +96,10 @@
         </div>
         <div>OR</div>
         <div>
-            <input type="email" placeholder="EMAIL">
+            <input type="email" placeholder="EMAIL" id="email">
         </div>
         <div>
-            <input type="password" placeholder="PASSWORD">
+            <input type="password" placeholder="PASSWORD" id="pass">
         </div>
         <div>
             <div>Remember me</div>
@@ -107,8 +107,8 @@
                 Forget password
             </div>
         </div>
-        <div>
-            LOG IN
+        <div id="log_in">
+           <submit id="submit">LOG IN</submit> 
         </div>
         <div>
             <div>
@@ -121,3 +121,22 @@
     </div>
 </body>
 </html>
+<script>
+    let signin_data=JSON.parse(localStorage.getItem('Customer'))||[];
+    document.querySelector('#submit').addEventListener('click',function(){
+        let email=document.querySelector('#email').value;
+        let pass=document.querySelector('#pass').value;
+        //console.log(email,pass);
+
+        if(email==signin_data.email && pass==signin_data.pass){
+            alert("Login Successful !");
+            // let a=document.createElement('a');
+            // a.href='http://127.0.0.1:5500/index.html';
+            
+        }
+        else{
+            alert("Please fill the correct email and password!");
+        }
+    })
+    console.log(signin_data)
+</script>
