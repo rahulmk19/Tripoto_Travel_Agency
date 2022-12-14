@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+        #login{
+            height: auto;
+            width: 350px;
+            background-color: white;
+            padding-top: 20px;
+        }
+        #login>div{
+            display: grid;
+            grid-template-rows: repeat(1,1fr);
+            margin: 10px;
+            /* border:1px solid red; */
+            height: 20px;
+            width: 90%;
+            height: 40px;
+            text-align: center;
+        }
+        #login>div:first-child{
+            display: flex;
+            color: white;
+            justify-content: center;
+            background-color: blue;
+            font-weight: 200px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            padding-top: 10px;
+        }
+        #login>div:nth-child(1)>div>img{
+            height: 40px;
+            margin-right: 10px;
+        }
+        #login>div:nth-child(2){
+            display: flex;
+            color:gray;
+            justify-content: center;
+            justify-content: center;
+            font-weight: 100px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            padding-top: 10px;
+        }
+        #login>div:nth-child(2)>div>img{
+            height: 35px;
+            margin-right: 15px;
+        }
+        #login>div:nth-child(4){
+            margin-top: -15px;
+        }
+        #country_mob>select{
+            width: 100%;
+            border: 0px;
+        }
+        #login>div:nth-child(7){
+            display: flex;
+            justify-content: space-between;
+        }
+        #login>div:nth-child(7)>div:nth-child(2){
+            color: turquoise;
+            font-weight: 100px;
+        }
+        #login>div:nth-child(9){
+            color:white;
+            font-weight: 100px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            background-color: brown;
+        }
+        
+        #login>:last-child{
+            display: flex;
+            justify-content: space-around;
+        }
+        #login>:last-child>div:nth-child(2){
+            color: turquoise;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div id="login">
+        <div>
+            <div><img src="./image/fb.jpeg"></div>
+            <div>Log in with Facebook</div> 
+        </div>
+        <div>
+            <div>
+            <img src="./image/google.png">
+            </div>
+            <div>
+            Log in with Google
+            </div>
+        </div>
+        <div>OR</div>
+        <div>
+            <input type="text" placeholder="Name">
+        </div>
+        <div>
+            <input type="email" placeholder="Email">
+        </div>
+        <div>
+            <input type="password" placeholder="Password">
+        </div>
+
+        <div id="country_mob">
+            <select>
+                <option>India (+91)</option>
+                <option>United States (+1)</option>
+                <option>United Arab Emirates (+971)</option>
+                <option>Singapore (+65)</option>
+                <option>Canada (+1)</option>
+                <option>Bhutan (+975)</option>
+                <option>Canada (+49)</option>
+                <option>Canada (+977)</option>
+            </select>
+        </div>
+        <div id="mob">
+            <input type="number" placeholder="Enter Phone no">
+        </div>
+        <div>
+            SIGN UP
+        </div>
+        <div>
+            By signing up, you agree to Tripoto's terms and conditions and privacy policy.
+        </div>
+        <div>
+            <div>
+                Already registered?
+            </div>
+            <div>
+                <a  style="color: aqua; text-decoration: none;" href="./signin.html">Log in</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+   
+</script>

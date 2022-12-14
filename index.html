@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripoto</title>
+</head>
+<style>
+    #nav{
+        display: flex;
+        width: 95%;
+        height: 80px;
+        justify-content: space-between;
+        /* border: 1px solid red; */
+        margin: auto;
+        background-color: rgb(34, 197, 197);
+    }
+    #nav>div{
+        display: flex;
+        justify-content: space-around;
+        /* border: 1px solid rgb(40, 36, 36); */
+        margin-right: 50px;
+        color: white;
+    }
+    #nav>div:nth-child(2)>div{
+        margin: 10px 20px;
+        
+    }
+    #nav>div>img{
+        height: 80px;
+        width: 100px;
+    }
+    #search{
+        width: 500px;
+        height: 50px;
+        margin: 15px 0px 0px 25px;
+        /* margin-left: 25px; */
+        border-radius: 5px;
+        border: 0px;
+    }
+    #nav>div>div>select{
+        margin-top: 20px;
+    }
+</style>
+<body>
+    <div id="nav">
+        <div>
+            <img src="./world tour tripoto.png">
+            <input id="search" placeholder="Search for itineraries, destination, hotels or activities" type="search">
+        </div>
+        <div>
+            <div>
+                <select>Inspirations
+                    <option value="">Visit Singapore</option>
+                    <option value="">Beaches</option>
+                    <option value="">Mountain</option>
+                    <option value="">Heritage</option>
+                    <option value="">Weekend Guide</option>
+                    <option value="">Upcoming Festivals</option>
+                    <option value="">Honeymoon Packages</option>
+                    <option value="">Wildlife Tourism</option>
+                    <option value="">Road Trips</option>
+                    <option value="">Getaways Guide</option>
+                    <option value="">Luxury Travel</option>
+                    <option value="">Explore More</option>
+                </select>
+            </div>
+            <div>
+                <h3>Forum</h3>
+            </div>
+            <div>
+                <h3>Packages</h3>
+            </div>
+            <div>
+                <select>
+                    <option>Create New</option>
+                    <option>Upload Photos/Videos</option>
+                    <option>Import Blog</option>
+                </select>
+            </div>
+            <div>
+                <h3>Sign in</h3>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
