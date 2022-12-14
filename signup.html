@@ -100,13 +100,13 @@
         </div>
         <div>OR</div>
         <div>
-            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Name" id="name">
         </div>
         <div>
-            <input type="email" placeholder="Email">
+            <input type="email" placeholder="Email" id="email">
         </div>
         <div>
-            <input type="password" placeholder="Password">
+            <input type="password" placeholder="Password" id="pass">
         </div>
 
         <div id="country_mob">
@@ -122,9 +122,9 @@
             </select>
         </div>
         <div id="mob">
-            <input type="number" placeholder="Enter Phone no">
+            <input type="number" placeholder="Enter Phone no" id="mobile">
         </div>
-        <div>
+        <div id="sign_up">
             SIGN UP
         </div>
         <div>
@@ -142,5 +142,23 @@
 </body>
 </html>
 <script>
-   
+
+    let signup_data=JSON.parse(localStorage.getItem('Customer'))||[];
+    document.querySelector('#sign_up').addEventListener('click',function(){
+        let obj={
+            name:document.querySelector('#name').value,
+            email:document.querySelector('#email').value,
+            pass:document.querySelector('#pass').value,
+            number:document.querySelector('#mobile').value
+        }
+        if(obj.name=="" || obj.email=="" || obj.pass=="" || obj.number==""){
+            alert("Please fill all the details");
+        }
+        else{
+            localStorage.setItem('Customer',JSON.stringify(signup_data));
+            signup_data.push(obj);
+        }
+    })
+    //console.log(signup_data);
+
 </script>
