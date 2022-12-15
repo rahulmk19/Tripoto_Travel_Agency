@@ -11,7 +11,7 @@
     display: block;
 }
 #dropdown_menu{
-    display: none; position: relative;z-index: 1; border: 1px solid red;
+    display: none; position: relative;z-index: 1;
 }
 #nav>div{
     display: flex;
