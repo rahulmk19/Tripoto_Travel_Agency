@@ -7,6 +7,12 @@
     margin: auto;
     background-color: rgb(34, 197, 197);
 }
+#dropdown_visit:hover #dropdown_menu{
+    display: block;
+}
+#dropdown_menu{
+    display: none; position: relative;z-index: 1; border: 1px solid red;
+}
 #nav>div{
     display: flex;
     justify-content: space-around;
@@ -45,4 +51,118 @@
     color: white;
     width: 115px;
     border: none;
+}
+#nav+div{
+    margin: 20px 220px;
+    margin-bottom: 70px;
+}
+#nav+div>img{
+    width: 1100px;
+}
+
+
+/* Top */
+#top{
+    display: flex;
+    justify-content: center;
+    
+}
+#top>img{
+    height: 100px;
+    width: 20%;
+}
+
+/* Partnership */
+#Partnership>h1{
+    margin-left: 170px;
+}
+#Partnership>div{
+    display: flex;
+    justify-content: center;
+    width: 88%;
+    margin-left: 80px;
+}
+#Partnership>div>div{
+    width: 21%;
+    margin-left:25px ;
+    text-align: left;
+}
+#Partnership>div>div>h4{
+    color: rgb(245, 117, 26);
+}
+#Partnership>div>div>img{
+    height: 200px;
+    width: 100%;
+    border-radius: 15px;
+}
+#event>img{
+    width: 79%;
+    margin: 30px 165px;
+    border-radius: 15px;
+}
+
+/* Best Place */
+#best_place>h1{
+    margin-left: 160px;
+}
+#best_place>div{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-left: 160px;
+    gap: 30px;
+}
+#best_place>div>div>img{
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+}
+#best_place>div>div>p>a{
+    color: rgb(22, 132, 132);
+    text-decoration: none;
+}
+#best_place>div>div>p>a:hover{
+    color: aqua;
+    text-decoration: none;
+}
+
+/* kerela visitor */
+#kerela_visit>img{
+    width: 80%;
+    margin: 20px 160px 50px;
+    border-radius: 5px;
+}
+#kerela_visit>div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 80%;
+    margin-left: 160px;
+    gap: 20px;
+}
+#kerela_visit>div>div>img{
+    width: 95%;
+    border-radius: 10px;
+    height: 200px;
+}
+
+/* Booking */
+#booking{
+    margin-top: 40px;
+}
+#booking>h1{
+    margin-left: 160px;
+}
+#booking>div{
+    display: flex;
+    width: 80%;
+    margin-left: 160px;
+    gap: 20px;
+}
+#booking>div>div{
+    width: 33%;
+}
+#booking>div>div>img{
+    width: 95%;
+    border-radius: 10px;
+    height: 220px;
 }

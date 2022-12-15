@@ -11,9 +11,12 @@
         }
         #login{
             height: 450px;
-            width: 350px;
+            width: 380px;
             background-color: white;
             padding-top: 20px;
+            margin-left: 40%;
+            margin-top: 50px;
+            border-radius: 10px;
         }
         #login>div{
             display: grid;
@@ -129,10 +132,10 @@
         //console.log(email,pass);
 
         if(email==signin_data.email && pass==signin_data.pass){
-            alert("Login Successful !");
+            // alert("Login Successful !");
             // let a=document.createElement('a');
             // a.href='http://127.0.0.1:5500/index.html';
-            
+            window.location.href="index.html";
         }
         else{
             alert("Please fill the correct email and password!");
