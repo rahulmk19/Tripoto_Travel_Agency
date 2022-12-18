@@ -83,11 +83,167 @@
         #login>:last-child>div:nth-child(2){
             color: turquoise;
         }
+        body{
+    background-color: bisque;
+}
+#nav{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    margin: auto;
+    background-color: rgb(34, 197, 197);
+}
+#dropdown_visit{
+    padding: 15px;
+    font-size: 20px;
+}
+#dropdown_visit:hover #dropdown_menu{
+    display: block;
+    border: 1px solid rebeccapurple;
+    height: 400px;
+    width: 200px;
+    background-color: white;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+#dropdown_visit:hover #dropdown_menu>a{
+    text-decoration: none;
+    color: black;
+}
+#dropdown_visit:hover #dropdown_menu>a:hover{
+    color: crimson;
+    background-color: azure;
+    font-size: 25px;
+}
+#dropdown_menu{
+    display: none;
+    position: relative;
+    z-index: 1;
+    margin-top: 7.3%;
+    width: max-content;
+    padding-top: 0.5%;
+    margin: auto;
+}
+#nav>div{
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid rgb(40, 36, 36); */
+    margin-right: 50px;
+    color: white;
+}
+#nav>div:nth-child(2)>div{
+    margin: 10px 20px;
+    
+}
+#nav>div>a>img{
+    height: 80px;
+    width: 100px;
+}
+#search{
+    width: 500px;
+    height: 50px;
+    margin: 15px 0px 0px 25px;
+    /* margin-left: 25px; */
+    border-radius: 5px;
+    border: 0px;
+}
+#nav>div>div>select{
+    margin-top: 20px;
+}
+#nav>:last-child>:last-child{
+    margin-top: 30px;
+}
+#nav>:last-child>:last-child>a{
+    color: white;
+    text-decoration: none;
+}
+#nav>div:nth-child(2)>div>select{
+    background-color: rgb(34, 197, 197);
+    color: white;
+    width: 115px;
+    border: none;
+}
+#nav+div{
+    margin: 20px 220px;
+    margin-bottom: 70px;
+}
+#nav+div>img{
+    width: 1100px;
+}
+
+/* info */
+#info{
+    display: flex;
+    justify-content:space-around;
+    margin: 20px 50px 0px -50px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding: 30px 0px;
+
+}
+#info>div>a{
+    color: rgb(84, 80, 80);
+    text-decoration: none;
+}
+#info+p{
+    margin:25px 45% 80px;
+    color: rgb(84, 80, 80);
+}
+#info>div>div:nth-child(1){
+    display: flex;
+    width: 20%;
+}
+#info>div>div:nth-child(1)>img{
+    width: 10px;
+    height: 10px;
+}
         
 
     </style>
 </head>
 <body>
+    <div id="nav">
+        <div>
+            <a href="./index.html"><img src="./image/world tour tripoto.png"></a>
+            <input id="search" placeholder="Search for itineraries, destination, hotels or activities" type="search">
+        </div>
+        <div>
+            <div id="dropdown_visit" >Inspirations
+                <p id="dropdown_menu">
+                    <a href="https://www.tripoto.com/collections/visit-singapore">Visit Singapore</a><br>
+                    <a href="https://www.tripoto.com/explore/beaches">Beaches</a><br>
+                    <a href="https://www.tripoto.com/explore/hill-stations">Mountain</a><br>
+                    <a href="https://www.tripoto.com/explore/historical-places">Heritage</a><br>
+                    <a href="https://www.tripoto.com/explore/nightlife">Weekend Guide</a><br>
+                    <a href="https://www.tripoto.com/collections/festivals-of-india">Upcoming Festivals</a><br>
+                    <a href="https://www.tripoto.com/explore/honeymoon">Honeymoon Packages</a><br>
+                    <a href="https://www.tripoto.com/collections/wildlife">Wildlife Tourism</a><br>
+                    <a href="https://www.tripoto.com/explore/road-trips">Road Trips</a><br>
+                    <a href="https://www.tripoto.com/weekend-getaways">Getaways Guide</a><br>
+                    <a href="https://www.tripoto.com/collections/luxury-travel">Luxury Travel</a><br>
+                    <a href="https://www.tripoto.com/explore">Explore More</a>
+                </p>
+            </div>
+            <div>
+                <h3>Forum</h3>
+            </div>
+            <div>
+                <h3>Packages</h3>
+            </div>
+            <div>
+                <select>
+                    <option>Create New</option>
+                    <option>Upload Photos/Videos</option>
+                    <option>Import Blog</option>
+                </select>
+            </div>
+            <div>
+                <a href="./signup.html">Sign in</a>
+            </div>
+        </div>
+    </div>
     <div id="login">
         <div>
             <div><img src="./image/fb.jpeg"></div>
@@ -142,6 +298,60 @@
             </div>
         </div>
     </div>
+    <div id="info">
+        <div>
+            <img src="https://cdn1.tripoto.com/assets/2.9/img/logo/header-blue.svg">
+            <P>India's Largest Travel Community</P>
+            <!-- <div>
+                <img src="./image/FB.png">
+                <img src="./image/Twitter.png">
+                <img src="./image/insta.png">
+                <img src="./image/youtube.png">
+                <img src="./image/pirest.png">
+            </div> -->
+            <a href="https://play.google.com/store/apps/details?id=com.tripoto&utm_source=web&utm_medium=footer"><img src="https://cdn1.tripoto.com/assets/2.9/img/logo/download-android-app.svg"></a>
+        </div>
+        <div>
+            <h3>About Tripoto</h3>
+            <a href="https://www.tripoto.com/how-it-works"><p>How It Works</p></a>
+            <a href="https://www.tripoto.com/frequently-asked-questions"><p>FAQ’s</p></a>
+            <a href="https://www.tripoto.com/privacy-policy"><p>Privacy Policy</p></a>
+            <a href="https://www.tripoto.com/terms"><p>Terms & Conditions</p></a>
+            <a href="https://www.tripoto.com/careers"><p>Careers</p></a>
+            <a href="https://www.tripoto.com/contact-us"><p>Contact Us</p></a>
+        </div>
+        <div>
+            <h3>Products</h3>
+            <a href="https://www.tripoto.com/tour-packages"><p>Tour Packages</p></a>
+            <a href="https://www.tripoto.com/travel-guide"><p>Travel Guides</p></a>
+            <a href="https://www.tripoto.com/trip"><p>Trips & Itineraries</p></a>
+            <a href="https://www.tripoto.com/weekend-getaways"><p>Weekend Getaways</p></a>
+            <a href="https://www.tripoto.com/places-to-visit"><p>Places to Visit</p></a>
+            <a href="https://www.tripoto.com/explore"><p>Other Travel Categories</p></a>
+            <a href="https://www.tripoto.com/community"><p>Tripoto Forum</p></a>
+            <a href="https://www.tripoto.com/explore/honeymoon"><p>Honeymoon Packages</p></a>
+        </div>
+        <div>
+            <h3>Important Travel Links</h3>
+            <a href="https://www.tripoto.com/goa"><p>Goa Tourism</p></a>
+            <a href="https://www.tripoto.com/dubai"><p>Dubai Tourism</p></a>
+            <a href="https://www.tripoto.com/singapore"><p>Singapore Tourism</p></a>
+            <a href="https://www.tripoto.com/kerala"><p>Kerala Tourism</p></a>
+            <a href="https://www.tripoto.com/manali"><p>Manali Tourism</p></a>
+            <a href="https://www.tripoto.com/bali"><p>Bali Tourism</p></a>
+            <a href="https://www.tripoto.com/sri-lanka"><p>Sri Lanka Tourism</p></a>
+            <a href="https://www.tripoto.com/india/trips/honeymoon-destinations-in-india"><p>Honeymoon Destinations In India</p></a>
+        </div>
+        <div>
+            <h3>Partner Programs</h3>
+            <a href="https://www.tripoto.com/buy-travel-leads-online-with-tripoto"><p>Buy Travel Leads</p></a>
+            <a href="https://www.tripoto.com/partner-with-us"><p>Partner With Us</p></a>
+            <a href="https://www.tripoto.com/travel-for-free-contest"><p>Earn Credits</p></a>
+            <a href="https://www.tripoto.com/travel-for-free-contest"><p>Get Paid To Travel</p></a>
+            <a href="https://www.tripoto.com/travel-blog-to-itinerary"><p>Import Blog To Itinerary</p></a>
+        </div>
+    </div>
+    <p>@All rights reserved</p>
 </body>
 </html>
 <script>
@@ -154,13 +364,14 @@
             pass:document.querySelector('#pass').value,
             number:document.querySelector('#mobile').value
         }
-        if(obj.name=="" || obj.email=="" || obj.pass=="" || obj.number==""){
-            alert("Please fill all the details");
+        if(obj.name==""||obj.email==""||obj.pass==""||obj.number==""){
+            alert("Please fill all the Details");
         }
         else{
-            localStorage.setItem('Customer',JSON.stringify(signup_data));
-            signup_data.push(obj);
+            localStorage.setItem('Customer',JSON.stringify(obj));
         }
+            // signup_data.push(obj);
+
     })
     //console.log(signup_data);
 

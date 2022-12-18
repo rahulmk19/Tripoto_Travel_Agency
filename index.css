@@ -6,10 +6,30 @@
     /* border: 1px solid red; */
     margin: auto;
     background-color: rgb(34, 197, 197);
+    position: sticky;
+    /* font-size: large; */
+}
+#dropdown_visit{
+    padding: 15px;
+    font-size: 20px;
 }
 #dropdown_visit:hover #dropdown_menu{
     display: block;
-
+    border: 1px solid rebeccapurple;
+    height: 400px;
+    width: 200px;
+    background-color: white;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+#dropdown_visit:hover #dropdown_menu>a{
+    text-decoration: none;
+    color: black;
+}
+#dropdown_visit:hover #dropdown_menu>a:hover{
+    color: crimson;
+    background-color: azure;
+    font-size: 25px;
 }
 #dropdown_menu{
     display: none;
@@ -220,17 +240,24 @@
 #booking1>div>div{
     width: 33%;
 }
-#booking1>div>div>img{
+#booking1>div>div>a>img{
     width: 95%;
     border-radius: 10px;
     height: 220px;
 }
-#booking1>div>div>div{
+#booking1>div>div>a{
+    text-decoration: none;
+    color: black;
+}
+span{
+    color: gray;
+}
+#booking1>div>div>a>div{
     display: flex;
     justify-content: space-between;
     margin: -30px 10px 0px 0px;
 }
-#booking1>div>div>div>button{
+#booking1>div>div>a>div>button{
     height: 35px;
     width: 100px;
     margin-top: 15px;
@@ -238,10 +265,10 @@
     color:rgb(27, 183, 183);
     border: 1px solid teal;
 }
-#booking1>div>div>h3+div>h4{
+#booking1>div>div>a>h3+div>h4{
     color: teal;
 }
-#booking1>div>div>h3+div>h3{
+#booking1>div>div>a>h3+div>h3{
     color: white;
     background-color: rgb(41, 106, 106);
     height: 30px;
@@ -268,4 +295,12 @@
 #info+p{
     margin:25px 45% 80px;
     color: rgb(84, 80, 80);
+}
+#info>div>div:nth-child(1){
+    display: flex;
+    width: 20%;
+}
+#info>div>div:nth-child(1)>img{
+    width: 10px;
+    height: 10px;
 }
