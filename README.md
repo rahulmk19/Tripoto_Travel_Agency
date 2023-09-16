@@ -1,7 +1,7 @@
 <h1>Tripot Travel Agency</h1>
 <h2>🌟  Description</h2>
 "Discover the beauty of India year-round, and explore captivating destinations across the country. From breathtaking festivals and serene retreats to international getaways, Tripoto is your go-to travel companion. Find the best flight deals, read inspiring travel stories, and access complete destination guides. Join India's largest travel community today and start your journey with Tripoto."
-<img align="center" alt="logo" width="400" src="">
+<img align="center" alt="logo" width="400" src="https://rahulmk19.github.io/Images/Tripoto%20logo.png">
 
 <h2>Live Demo Link : https://marvelous-biscotti-e90580.netlify.app/</h2>
 
